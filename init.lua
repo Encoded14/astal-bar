@@ -1,8 +1,9 @@
 local App = require("astal.gtk3.app")
+local Bar = require("widget.Bar")
 
-App:start({
+App:start {
     main = function()
-        -- you will instantiate Widgets here
-        -- and setup anything else if you need
-    end
-})
+        Bar(0)
+        Bar(1) -- instantiate for each monitor
+    end,
+}
