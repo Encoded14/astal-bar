@@ -17,6 +17,7 @@ outputs = { self, nixpkgs, astal }: let
             src = ./.; 
 
             extraPackages = with astal.packages.${system};
+            [
                 apps
                 astal3
                 battery
